@@ -19,7 +19,7 @@ function Hangman() {
     var blanks = "";
     for (var i = 0; i < numberOfBlanks; i++) {
         blanks += "_" + " ";
-        document.getElementById("currentWord").innerHTML = blanks;
+        document.getElementById("currentWord").innerHTML = (blanks);
     };
     // display number of wins and remaining guesses
     document.getElementById("wins").innerHTML = wins;
