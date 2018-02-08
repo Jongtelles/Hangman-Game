@@ -14,58 +14,21 @@
 <body>
     <div id="game">
         <h1>Press any key to get started!</h1>
+
         Current word:
         <div id="currentWord">
+        </div>
+        <div id="error">
         </div>
         <div id="stats">
             Guesses remaining:
             <span id="remainingGuesses"></span>
-            <br /> Letters already guessed:
+            <br /> Letters guessed:
             <span id="lettersGuessed"></span>
             <br /> Words guessed correctly:
             <span id="wins"></span>
         </div>
     </div>
-
-    <!-- When a window loads for the first time
- -generate a random word
- -display that many blanks (_ characters)
- -display number of guesses remaining
-    -starting with 5
- -letters already guessed
-    -starting blank
- -wins (times they've guessed the word correctly)
-    -starting with 0
-Do that one time
-Then
-listen for the letters that the player types
-(var userGuess = event.key.toLowerCase();)
-When user presses a key 
- -convert to lowercase
- -compare with the remaining blank letters & letters already guessed
-    -if letter is in the generated word
-        -fill in the correct blank with a capital letter
-    -if letter is not in the generated word
-        -add a limb to the hangman
-        -subtract 1 from remaining guesses
-    -if the letter was already guessed
-        -tell the user they've already guessed that letter
-    -if the letter was not yet guessed
-        -add to the Letters Already Guessed display
- -check to see if the game is over
-    -make sure number of guesses >= 1
-        -if yes, do nothing
-        -if no, game ends in loss
-    -see if there are any blank letters left in the currentWord
-        -if yes, do nothing
-        -if no, game ends in win
- -if game ends in loss
-    -display GAME OVER
- -if game ends in win
-    -display YOU WIN
-    -increase wins by 1
-BOTH: restart the game with a new blank word, reset letters already guessed, remaining guesses -->
-
 
     <script type="text/javascript" src="./assets/javascript/game.js"></script>
 
