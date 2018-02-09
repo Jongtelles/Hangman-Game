@@ -1,6 +1,6 @@
 // setting global variables
 var currentWord, numberOfBlanks, blanks, userGuess, underscore;
-var words = ["city", "beltway", "east", "coast", "metro", "swamp", "river"];
+var words = ["city", "beltway", "east", "coast", "metro", "swamp", "park"];
 var availableLetters = "abcdefghijklmnopqrstuvwxyz";
 var remainingGuesses = 5;
 var lettersGuessed = [];

@@ -12,24 +12,29 @@
 </head>
 
 <body>
-    <div id="game">
-        <h1>It's Hangman, the game</h1>
-        <p id="message">Press any key from A-Z to guess!</p>
-        Current word:
-        <div id="currentWord">
-        </div>
-        <div id="error">
-        </div>
-        <div id="stats">
-            Guesses remaining:
-            <span id="remainingGuesses"></span>
-            <br /> Letters guessed:
-            <span id="lettersGuessed"></span>
-            <br /> Words guessed correctly:
-            <span id="wins"></span>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-md-6">
+                <h1>It's Hangman, the game™</h1>
+                <p id="message">Press any key from A-Z to guess!</p>
+                Current word:
+                <div id="currentWord">
+                </div>
+                <div id="error">
+                </div>
+            </div>
+            <div class="col-md-6 mt-5">
+                <div id="stats">
+                    Guesses remaining:
+                    <span id="remainingGuesses"></span>
+                    <br /> Letters guessed:
+                    <span id="lettersGuessed"></span>
+                    <br /> Words guessed correctly:
+                    <span id="wins"></span>
+                </div>
+            </div>
         </div>
     </div>
-
     <script type="text/javascript" src="./assets/javascript/game.js"></script>
 
 </body>
